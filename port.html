@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Portfolio</title>
+</head>
+</head>
+    <link rel="stylesheet" href="smriti.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            	<img src="file:///C:/Users/acer/OneDrive/Pictures/Screenshots/Screenshot%20(696).png">
+            <ul>
+                <li><a href="port.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="person.html">Portfolio</a></li>
+                <li><a href="cont.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+        	<p>UI/UX Designer</p>
+        	<h1>Hi, I'm <span>Smriti</span><br>Ghale from Nepal</h1>
+        </div>
+        </div>
+
+    </div>
+    <div id="about">
+    	<div class="container">
+    		<div class="row">
+    			<div class="about-col-1">
+    				<img style="width: 500px; height: 600px;"src="file:///C:/Users/acer/Downloads/329916871_756119588903282_6544883281537440853_n.jpg">
+    			</div>
+    			<div class="about-col-2">
+    				<h1>About me</h1>
+    				<p>I am energetic, enthusiastic and honest to find a challenging position to meet my competencies and capabilities. I am a dynamic and self-motivated person having keen interest to work.</p>
+    			<div class="tab-titles">
+    				<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+    				<p class="tab-links" onclick="opentab('achievement')">Academic Achievement|Certificate</p>
+    				<p class="tab-links" onclick="opentab('education')">Education</p>
+    			</div>
+    			<div class="tab-contents active-tab" id="skills">
+    				<ul>
+    					<li><span>UI/UX</span><br>Designing Web/App Interface<br>Creating logo and business card</li>
+    					<li><span>HTML5</span><br>Web page development</li>
+                        <li><span>Database MySQL</span><br>Beginner</li>
+    				</ul>
+    			</div>
+    			<div class="tab-contents" id="achievement">
+    				<ul>
+    					<li><span>AWS Certificate</span><br>AWS Academy Cloud Foundation<br>AWS Academy Machine Learning</li>
+    					<li><span>Art Certificate</span><br>Runner up in Inter-school Painting Competition</li>
+    				</ul>
+    			</div>
+    			<div class="tab-contents" id="education">
+    				<ul>
+    					<li><span>2020</span><br>Undergraduate in Science at Reliance International Academy</li>
+    				</ul>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+<!------------------Work----------------- -->
+<div id= "work">
+    <div class= "container">
+        <h1>My Work</h1>
+        <div class="work-list">
+            
+        </div>
+    </div>
+</div>
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname) {
+		for (tablink of tablinks) {
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+</body>
+
+
+</html>    
